@@ -4,4 +4,127 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: red;
 }
-
+.header-background{
+    display: flex;
+    flex-flow: column;
+}
+.header-img{
+    width: 100%;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: .5px solid #e5e5e5;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.a {
+    color: #9c2845;
+    text-decoration: none;
+    background-color: transparent;
+}
+.img {
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+    margin-top: 7%;
+}
+.mainmenu{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.mainmenu li{
+    position: relative;
+    list-style-type: none;
+    
+}
+.mainmenu  li  a {
+    text-decoration: none;
+    color :black;
+    display: block;
+    padding: 18px 20px;
+    
+    
+}
+.mainmenu  li  a:hover {
+    color: rgb(45, 17, 252);
+}
+.mainmenu ul.menu-item{
+    position: absolute;
+    padding: 15px 0px;
+    width: 160px;
+    list-style-type: none;
+    display: none;
+    top: 45px;
+}
+.mainmenu li:hover>ul.menu-item{
+    display: block;
+}
+.mainmenu ul.menu-item a{
+    padding: 8px 15px;
+    border-bottom: 1px solid#e5e6ec;
+    position: relative;
+    left:0px;
+    background-color: #fff;
+}   
+/* .mainmenu ul.menu-item li:last-child a{
+    border: none;
+} */
+.mainmenu ul.menu-item ul.menu-item{
+    left: 160px;
+    top:-10px;
+    bottom: 100px;
+    
+}
+.block-search {
+    display: none;
+}
+.block-search .search-bar {
+    position: absolute;
+    right: 27px;
+    z-index: 9999;
+    width: 200px;
+    height: 20px;
+    top: 49px;
+}
+.block-search .search-bar button {
+    position: absolute;
+    right: 10px;
+    border: 1px solid;
+    height: 26px;
+    top: 19px;
+    line-height: 26px;
+    border: none;
+    z-index: 999;
+    background: #fff;
+}
+.header-menu .search-account {
+    text-align: right;
+}
+.icon-search{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 64px;
+}
+.acount-cart{
+    display: inline-flex;
+   
+}
+.acount{
+    padding: 0 15px;
+}
+.block-cart{
+    padding: 0 15px;
+}
